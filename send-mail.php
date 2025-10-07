@@ -1,8 +1,8 @@
 <?php
-// 1. Получаем данные из формы (они приходят из JavaScript)
-$name = $_POST['name'] ?? ''; // Имя пользователя
-$email = $_POST['email'] ?? ''; // Email пользователя
-$phone = $_POST['phone'] ?? ''; // Телефон пользователя
+
+$name = $_POST['name'] ?? ''; 
+$email = $_POST['email'] ?? ''; 
+$phone = $_POST['phone'] ?? ''; 
 
 // 2. Проверяем, что все обязательные поля заполнены
 if (empty($name) || empty($email) || empty($phone)) {
@@ -12,11 +12,11 @@ if (empty($name) || empty($email) || empty($phone)) {
 }
 
 // 3. Настройки для отправки письма
-$to = 'an_prokhorova86@mail.ru'; // ❗ Заменить на  почту (куда будут приходить заявки)
-$subject = 'Новая заявка с сайта АгроИАС'; // Тема письма
-$charset = 'UTF-8'; // Кодировка (чтобы кириллица отображалась корректно)
+$to = 'an_prokhorova86@mail.ru'; 
+$subject = 'Новая заявка с сайта АгроИАС'; 
+$charset = 'UTF-8';
 
-// 4. Содержимое письма (то, что вы увидите в почте)
+// 4. Содержимое письма 
 $message = "
   <html>
   <body>
@@ -28,10 +28,10 @@ $message = "
   </html>
 ";
 
-// 5. Заголовки письма (необходимы для корректного отображения)
+// 5. Заголовки письма 
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=$charset\r\n";
-$headers .= "From: Заявка с сайта <no-reply@agroias.ru>\r\n"; // ❗ Замените no-reply@agroias.ru на домен вашего сайта (если есть)
+$headers .= "From: Заявка с сайта <no-reply@agroias.ru>\r\n"; 
 $headers .= "Reply-To: $email\r\n"; // Ответить будет на email пользователя
 
 // 6. Отправляем письмо
@@ -43,3 +43,4 @@ if (mail($to, $subject, $message, $headers)) {
     http_response_code(500);
     echo json_encode(['status' => 'error', 'message' => 'Не удалось отправить заявку']);
 }
+
