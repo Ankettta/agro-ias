@@ -1781,22 +1781,22 @@ monitoring__section--process {
 /* Для экранов ≤ 940px (планшеты) */
 @media (max-width: 940px) {
   .contacts__wrapper {
-    flex-direction: column; /* Карта под информацией */
+    flex-direction: column; 
   }
 
   .contacts__map {
-    min-height: 350px; /* Уменьшаем высоту карты */
+    min-height: 350px; 
   }
 
   .footer__wrapper {
-    gap: 40px; /* Меньший отступ между колонками футера */
+    gap: 40px; 
   }
 }
 
 /* Для экранов ≤ 768px (мобильные) */
 @media (max-width: 768px) {
   .contacts {
-    padding: calc(var(--section-padding) / 1.5) 0; /* Уменьшаем отступы */
+    padding: calc(var(--section-padding) / 1.5) 0;
   }
 
   .contacts__title {
@@ -1804,22 +1804,22 @@ monitoring__section--process {
   }
 
   .contacts__info {
-    gap: 24px; /* Меньший отступ между пунктами контактов */
+    gap: 24px; 
   }
 
   .contacts__map {
-    min-height: 300px; /* Еще меньше высота карты */
+    min-height: 300px; 
   }
 
   .footer__wrapper {
-    flex-direction: column; /* Колонки футера в ряд */
+    flex-direction: column; 
     gap: 32px;
   }
 
   .footer__brand,
   .footer__nav,
   .footer__social {
-    flex: 1 1 100%; /* Занимают всю ширину */
+    flex: 1 1 100%; 
   }
 
   .footer__copyright {
@@ -1831,20 +1831,20 @@ monitoring__section--process {
 /* Для экранов ≤ 425px (маленькие мобильные) */
 @media (max-width: 425px) {
   .contacts__map {
-    min-height: 250px; /* Минимальная высота карты */
+    min-height: 250px; 
   }
 
   .footer__social-list {
-    gap: 12px; /* Меньший отступ между иконками */
+    gap: 12px; 
   }
 }
 /* =======================
 АДАПТИВ: СОРТИРОВКА ПО БРЕЙКПОИНТАМ (ШИРОКИЕ → УЗКИЕ)
 ======================= */
 
-/* 1. Для экранов ≤ 940px (промежуточный размер: например, планшеты в горизонтальной ориентации) */
+/* 1. Для экранов ≤ 940px*/
 @media (max-width: 940px) {
-  /* Переопределяем глобальные переменные шрифтов для этого брейкпоинта */
+  
   :root {
     --font-size-base: 15px;
     --font-size-lg: 18px;
@@ -1897,7 +1897,7 @@ monitoring__section--process {
 
 /* 2. Для экранов ≤ 768px (планшеты в вертикальной, мобильные в горизонтальной) */
 @media (max-width: 768px) {
-  /* Переопределяем глобальные переменные шрифтов (для меньших экранов) */
+ 
   :root {
     --font-size-base: 14px;
     --font-size-lg: 16px;
@@ -1976,7 +1976,7 @@ monitoring__section--process {
 
 }
 
-/* 3. Для экранов ≤ 425px (мобильные в вертикальной) */
+
 @media (max-width: 425px) {
   /* Баннер */
   .banner__partners {
@@ -1984,13 +1984,14 @@ monitoring__section--process {
   }
 
   .implementation__stage {
-    padding-left: 56px; /* Меньший отступ для узких экранов */
+    padding-left: 56px; 
   }
 
   .implementation__stage-number {
-    width: 40px; /* Меньший кружок с цифрой */
+    width: 40px; 
     height: 40px;
     font-size: 18px;
   }
 
 }
+
