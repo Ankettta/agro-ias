@@ -80,13 +80,11 @@ if (cooperationForm) {
     submitBtn.textContent = currentTranslations.form_sending || 'Отправка...';
 
     try {
-      // ❗ Заменили YOUR_WEB_APP_URL на 'send-mail.php' (путь к нашему PHP-файлу)
       const response = await fetch('send-mail.php', { 
         method: 'POST',
         body: formData
       });
 
-      // Проверяем, что сервер не вернул ошибку (например, 404 или 500)
       if (!response.ok) {
         throw new Error(`Ошибка сервера: ${response.status}`);
       }
@@ -192,4 +190,5 @@ if (cooperationForm) {
   // 5. Загружаем переводы по умолчанию (единожды, без дублирования)
   loadTranslations(activeLang);
 });
+
     
