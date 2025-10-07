@@ -19,7 +19,7 @@ a {
   color: var(--color-text); /* текст по умолчанию */
   text-decoration: none;
   position: relative;
-  transition: color 0.4s ease; /* плавная смена цвета текста */
+  transition: color 0.4s ease; 
 }
 
 
@@ -37,7 +37,7 @@ picture {
   display: block;
 }
 
-/* Убираем базовые стили у кнопок */
+
 button {
   font: inherit;
   color: inherit;
@@ -57,7 +57,7 @@ select {
   outline: none;
 }
 
-/* Заголовки наследуют размер и вес */
+
 /* h1, h2, h3, h4, h5, h6 {
   font: inherit;
   font-weight: inherit;
@@ -202,7 +202,7 @@ body {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background-color: var(--color-primary); /* линия */
+  background-color: var(--color-primary); 
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.4s ease;
@@ -210,13 +210,13 @@ body {
 }
 
 .nav__item a:hover {
-  color: var(--color-primary-dark); /* цвет текста при hover */
+  color: var(--color-primary-dark); 
 }
 
 .nav__item a:hover::after {
   transform: scaleX(1);
   opacity: 1;
-  background-color: var(--color-primary-dark); /* цвет линии при hover */
+  background-color: var(--color-primary-dark); 
 }
 
 
@@ -424,8 +424,8 @@ body {
 
 .intro__row {
   display: flex;
-  align-items: center; /* выравнивание по верхнему краю */
-  flex-wrap: wrap; /* чтобы на мобильных переносилось в столбец */
+  align-items: center; 
+  flex-wrap: wrap; 
   justify-content: space-between;
 }
 
@@ -433,12 +433,12 @@ body {
   font-size: var(--font-size-xl);
   font-weight: bold;
   color: var(--color-primary);
-  white-space: nowrap; /* не переносить слово АгроИАС */
+  white-space: nowrap;
   border-bottom: 3px solid var(--color-primary); 
 }
 
 .intro__text {
-  max-width: 700px; /* чтобы текст не расползался на всю ширину */
+  max-width: 700px; 
   line-height: 1.5;
   color: var(--color-text);
   text-align: left;
@@ -453,13 +453,13 @@ body {
 /* Заголовок с голубым фоном и скруглением */
 .about__module-title {
   background-color: var(--color-primary-light);
-  color: var(--color-primary); /* светло-голубой */
+  color: var(--color-primary);
   border-radius: var(--radius-sm);
   padding: 12px 24px;
-  text-transform: uppercase; /* верхний регистр */
-  margin: 0 0 12px 0; /* отступ снизу */
+  text-transform: uppercase; 
+  margin: 0 0 12px 0; 
   font-weight: bold;
-  display: inline-block; /* чтобы фон “обтекал” только текст */
+  display: inline-block;
 }
 
 /* Параграф без фона */
@@ -491,28 +491,28 @@ body {
   }
     .about__module-title {
       margin: 30px 0;
-      text-align: center;   /* заголовки по центру */
-      display: block;       /* фон растягивается по центру */
+      text-align: center;   
+      display: block;       
   }
 }
 
 /* Фон всей секции светло-синий только под блоками */
 .production__bg {
-  background-color: var(--color-white); /* светло-синий фон через переменную */
-  padding: 0; /* убрали верхний padding */
+  background-color: var(--color-white); 
+  padding: 0; 
 }
 
 /* Заголовок модуля на синем фоне */
 .production__title {
   display: block;
   width: 100%;
-  background-color: var(--color-primary); /* основной синий через переменную */
-  color: #fff; /* текст белый */
+  background-color: var(--color-primary); 
+  color: #fff; 
   padding: 12px 24px;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 0 0 0 0; /* скругление только сверху */
-  margin: 0; /* убрали отступ снизу */
+  border-radius: 0 0 0 0; 
+  margin: 0; 
 }
 
 /* Контейнер блоков */
@@ -520,16 +520,16 @@ body {
   display: flex;
   gap: 20px;
   align-items: stretch;
-  padding: 0; /* убрали верхний padding, чтобы блоки сразу начинались под заголовком */
+  padding: 0; 
 }
 
 /* Блоки с общим светло-синим фоном */
 .production__block {
   flex: 1;
-  background-color: var(--color-white); /* светло-синий через переменную */
+  background-color: var(--color-white);
   padding: 16px 24px;
   border-radius: var(--radius-sm);
-  color: var(--color-text); /* текст через переменную */
+  color: var(--color-text); 
 }
 
 /* Разделительная линия */
@@ -574,7 +574,7 @@ body {
   .production__divider {
     width: 100%;
     height: 2px;
-    margin: 0; /* убрать вертикальные отступы */
+    margin: 0; 
   }
   .production__block--left,
   .production__block--right {
@@ -586,21 +586,21 @@ body {
  padding: 0;
 }
 .processes {
-  margin: 0;        /* убираем отступ секции сверху */
-  padding: 0;       /* если нужен полностью плотный блок */
+  margin: 0;      
+  padding: 0;      
 }
 
-/* Заголовок на синем фоне */
+
 .processes__title {
   display: block;
   width: 100%;
-  background-color: var(--color-primary); /* основной синий через переменную */
-  color: #fff; /* текст белый */
+  background-color: var(--color-primary); 
+  color: #fff; 
   padding: 12px 24px;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 0 0 var(--radius-md) var(--radius-md) ; /* скругление только сверху */
-  margin: 0; /* убрали отступ снизу */
+  border-radius: 0 0 var(--radius-md) var(--radius-md) ; 
+  margin: 0; 
 }
 
 /* Контейнер иконок */
@@ -631,15 +631,15 @@ body {
   color: var(--color-text);
 }
 
-/* Адаптив для планшетов: сохраняем 4 колонки, уменьшаем отступы */
+/* Адаптив для планшетов */
 @media (max-width: 1024px) and (min-width: 769px) {
   .processes__icons {
-    gap: 16px;    /* уменьшаем расстояние между иконками */
+    gap: 16px;    
     padding: 16px;
   }
 }
 
-/* Планшеты и маленькие экраны: 2 колонки */
+/* Планшеты и маленькие экраны */
 @media (max-width: 768px) {
   .processes__icons {
     grid-template-columns: repeat(2, 1fr);
@@ -699,9 +699,9 @@ body {
 /* === Входные и выходные данные === */
 .monitoring__section {
   margin-bottom: 40px;
-  padding: 20px 20px 20px 40px; /* оставляем место под линию */
+  padding: 20px 20px 20px 40px;
   position: relative;
-  display: block; /* фикс — прижатие к левому краю */
+  display: block; 
   text-align: left;
 }
 
@@ -710,7 +710,7 @@ body {
   margin-bottom: 16px;
   background-color: var(--color-primary);
   border-radius: var(--radius-md);
-  display: inline-block; /* ширина по тексту */
+  display: inline-block; 
   padding: 4px 10px;
   text-align: left;  
 }
@@ -723,7 +723,7 @@ body {
 /* Контейнер процесса */
 .monitoring__process {
   display: flex;
-  align-items: stretch; /* стрелка тянется по высоте списка */
+  align-items: stretch; 
   gap: 16px;
   position: relative;
 }
@@ -749,14 +749,14 @@ monitoring__section--process {
 .monitoring__arrow::before {
   content: "";
   flex-grow: 1;
-  border-left: 2px dashed #fff; /* пунктир */
+  border-left: 2px dashed #fff;
 }
 
 .monitoring__arrow::after {
   content: "";
   position: absolute;
   bottom: -8px;
-  transform: translateX(-50%); /* центрируем */
+  transform: translateX(-50%); 
   margin-left: -1px; /* микро-фикс, чтобы совпадало */
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -835,7 +835,7 @@ monitoring__section--process {
 /* Базовый стиль карточки */
 .monitoring__cards--stair .monitoring__card {
   position: relative;
-  padding: 6px 12px; /* одинаково как обычная карточка */
+  padding: 6px 12px; 
   margin-bottom: 12px;
 }
 
@@ -878,9 +878,9 @@ monitoring__section--process {
   }
 
   .monitoring__card {
-    transform: none !important; /* убираем шахматку */
-    width: 100%; /* тянем на всю ширину */
-    text-align: left; /* читаемость */
+    transform: none !important; 
+    width: 100%;
+    text-align: left; 
   }
    .monitoring__cards--stair .monitoring__card {
     margin-left: 0 !important;
@@ -921,18 +921,18 @@ monitoring__section--process {
   font-weight: bold;
   color: var(--color-primary);
   margin-bottom: 80px;
-  z-index: 2; /* чтобы быть над кругами */
+  z-index: 2; 
 }
 
 
 /* Новый: Мобильный заголовок (по умолчанию скрыт) */
 .advantages__heading--mobile {
-  display: none; /* скрываем на десктопе */
+  display: none;
   text-align: center;
-  font-size: 1.6rem; /* такой же, как у десктопного на мобилках */
+  font-size: 1.6rem; 
   font-weight: bold;
   color: var(--color-primary);
-  margin: 0 0 40px; /* отступ снизу до карточек */
+  margin: 0 0 40px; 
 }
 
 /* Сетка карточек (исходные стили + добавляем z-index, чтобы карточки были над фоном) */
@@ -943,9 +943,8 @@ monitoring__section--process {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  z-index: 1; /* над фоном, но ниже десктопного заголовка */
+  z-index: 1; 
 }
-
 
 .advantages__card {
   padding: 20px;
@@ -1128,7 +1127,7 @@ monitoring__section--process {
   }
 
   .advantages__background {
-    display: none; /* фон отключаем на мобилках */
+    display: none; 
   }
 }
 
@@ -1266,9 +1265,9 @@ monitoring__section--process {
 @media (max-width: 768px) {
   .progress__form {
     display: flex;
-    flex-direction: column; /* ставим вертикально */
-    gap: 12px;             /* расстояние между полем и кнопкой */
-    flex-wrap: nowrap;      /* убираем wrap */
+    flex-direction: column; 
+    gap: 12px;             
+    flex-wrap: nowrap;     
   }
   .progress__form-title {
   font-size: 24px;
@@ -1277,12 +1276,12 @@ monitoring__section--process {
 
   .progress__input {
     width: 100%;
-    flex: none;             /* чтобы не сжималось */
+    flex: none;            
   }
 
   .progress__button {
     width: 100%;
-    flex: none;             /* чтобы кнопка сразу под input */
+    flex: none;             
   }
   .progress__right{display: none;}
 }
@@ -1291,16 +1290,16 @@ monitoring__section--process {
 БЛОК "ЭТАПЫ ВНЕДРЕНИЯ" — ОСНОВНЫЕ СТИЛИ
 ======================= */
 .implementation {
-  background-color: var(--color-primary); /* Фон на всю ширину */
-  border-radius: var(--radius-md); /* Скругленные углы */
-  padding: 80px 0; /* Отступы только сверху/снизу (боковые отступы добавит .container) */
+  background-color: var(--color-primary); 
+  border-radius: var(--radius-md); 
+  padding: 80px 0; 
   color: var(--color-white);
 }
 
 /* Заголовок, разделитель и описание */
 .implementation__header {
-  text-align: center; /* Центрируем все элементы в хедере */
-  margin-bottom: 60px; /* Отступ снизу до этапов */
+  text-align: center; 
+  margin-bottom: 60px; 
 }
 
 .implementation__title {
@@ -1311,43 +1310,43 @@ monitoring__section--process {
 }
 
 .implementation__divider {
-  width: 80px; /* Ширина разделительной линии */
-  height: 2px; /* Толщина линии */
-  background-color: #fff; /* Белый цвет линии */
-  margin: 0 auto 24px; /* Центрируем линию, отступ снизу до текста */
+  width: 80px;
+  height: 2px;
+  background-color: #fff; 
+  margin: 0 auto 24px; 
 }
 
 .implementation__desc {
   font-size: 18px;
-  max-width: 800px; /* Ограничиваем ширину текста для читаемости */
-  margin: 0 auto; /* Центрируем параграф */
-  opacity: 0.9; /* Немного осветляем текст (опционально) */
+  max-width: 800px; 
+  margin: 0 auto; 
+  opacity: 0.9; 
 }
 
 /* Контейнер для этапов и линии */
 .implementation__timeline {
-  position: relative; /* Для позиционирования линии (абсолютно внутри) */
-  max-width: 900px; /* Ограничиваем ширину таймлайна */
-  margin: 0 auto; /* Центрируем таймлайн */
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto; 
 }
 
 /* ЛИНИЯ МЕЖДУ ЭТАПАМИ (десктоп: зигзаг, мобильный: прямая) */
 .implementation__line {
   position: absolute;
-  left: 50%; /* На десктопе линия по центру */
+  left: 50%; 
   top: 0;
   bottom: 0;
-  width: 5px; /* Толщина линии */
-  background-color: #fff; /* Белый цвет линии */
-  transform: translateX(-50%); /* Центрируем линию точно по оси X */
+  width: 5px;
+  background-color: #fff; 
+  transform: translateX(-50%);
 }
 
 /* ЭТАПЫ (общие стили) */
 .implementation__stage {
-  position: relative; /* Для позиционирования цифры */
-  margin-bottom: 80px; /* Отступ между этапами */
-  display: flex; /* Горизонтальное расположение цифры и контента */
-  align-items: center; /* Выравниваем по центру вертикально */
+  position: relative; 
+  margin-bottom: 80px;
+  display: flex; 
+  align-items: center; 
 }
 
 /* Убираем отступ у последнего этапа */
@@ -1357,40 +1356,40 @@ monitoring__section--process {
 
 /* Цифра в белом кружке */
 .implementation__stage-number {
-  width: 48px; /* Ширина кружка */
-  height: 48px; /* Высота кружка */
-  border-radius: 50%; /* Круглая форма */
-  background-color: var(--color-white); /* Белый фон */
-  color: var(--color-primary); /* Синій цвет цифры (совпадает с фоном блока) */
+  width: 48px; 
+  height: 48px; 
+  border-radius: 50%; 
+  background-color: var(--color-white); 
+  color: var(--color-primary); 
   font-size: var(--font-size-base);
   font-weight: 700;
   display: flex;
   align-items: center;
-  justify-content: center; /* Центрируем цифру */
+  justify-content: center; 
   position: absolute;
-  left: 50%; /* Размещаем цифру на линии */
-  transform: translateX(-50%); /* Центрируем цифру относительно линии */
-  z-index: 2; /* Цифра поверх линии */
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 2; 
 }
 
 /* Контент этапа (заголовок, текст, срок) */
 .implementation__stage-content {
-  width: 40%; /* Ширина блока контента (40% от таймлайна) */
+  width: 40%; 
   padding: 20px;
-  border-radius: var(--radius-md); /* Скругление углов контента (опционально) */
-  background-color: var(--color-primary-light); /* Полупрозрачный белый фон (опционально) */
+  border-radius: var(--radius-md); 
+  background-color: var(--color-primary-light); 
 }
 
 /* Расположение контента: четные этапы — слева, нечетные — справа (десктоп) */
 .implementation__stage--1 .implementation__stage-content,
 .implementation__stage--3 .implementation__stage-content,
 .implementation__stage--5 .implementation__stage-content {
-  margin-left: auto; /* Контент справа */
+  margin-left: auto; 
 }
 
 .implementation__stage--2 .implementation__stage-content,
 .implementation__stage--4 .implementation__stage-content {
-  margin-right: auto; /* Контент слева */
+  margin-right: auto; 
 }
 
 /* Стили текста в контенте этапа */
@@ -1588,7 +1587,7 @@ monitoring__section--process {
 ======================= */
 .contacts {
   padding: var(--section-padding) 0;
-  background-color: var(--color-bg-light); /* Светло-синий фон (из ваших переменных) */
+  background-color: var(--color-bg-light); 
 }
 
 .contacts__title {
@@ -1602,12 +1601,12 @@ monitoring__section--process {
 .contacts__wrapper {
   display: flex;
   gap: 40px;
-  align-items: stretch; /* Равная высота для колонок (информация + карта) */
+  align-items: stretch; 
 }
 
 /* Информация о контактах */
 .contacts__info {
-  flex: 1 1 350px; /* Занимает 350px + адаптивно растягивается */
+  flex: 1 1 350px; 
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1640,17 +1639,17 @@ monitoring__section--process {
 
 /* Ховер для ссылок контактов */
 .contacts__info-link:hover {
-  color: var(--color-primary-dark); /* Темнее синий при наведении */
+  color: var(--color-primary-dark);
   text-decoration: underline;
 }
 
 /* Карта */
 .contacts__map {
-  flex: 1 1 600px; /* Занимает 600px + адаптивно растягивается */
+  flex: 1 1 600px; 
   border-radius: var(--radius-md);
-  overflow: hidden; /* Скрываем углы iframe за скруглением контейнера */
+  overflow: hidden; 
   box-shadow: var(--shadow-sm);
-  min-height: 400px; /* Минимальная высота карты */
+  min-height: 400px; 
 }
 
 
@@ -1658,15 +1657,15 @@ monitoring__section--process {
 ПОДВАЛ (FOOTER)
 ======================= */
 .footer {
-  background-color: var(--color-primary); /* Темно-синий фон (ваша основная цветовая гамма) */
+  background-color: var(--color-primary); 
   color: var(--color-white);
-  padding: calc(var(--section-padding) / 1.2) 0; /* Меньшие отступы, чем в секциях */
+  padding: calc(var(--section-padding) / 1.2) 0;
 }
 
 .footer__wrapper {
   display: flex;
   gap: 60px;
-  flex-wrap: wrap; /* Перенос колонок на мобильных */
+  flex-wrap: wrap; 
   margin-bottom: 40px;
 }
 
@@ -1725,7 +1724,7 @@ monitoring__section--process {
 /* Ховер для ссылок навигации */
 .footer__nav-link:hover {
   opacity: 1;
-  transform: translateX(4px); /* Легкий сдвиг вправо */
+  transform: translateX(4px); 
 }
 
 /* Социальные сети */
@@ -1763,7 +1762,7 @@ monitoring__section--process {
 /* Ховер для иконок социальных сетей */
 .footer__social-link:hover {
   opacity: 1;
-  transform: translateY(-3px); /* Легкий подъем */
+  transform: translateY(-3px);
 }
 
 /* Копирайт */
@@ -1772,7 +1771,7 @@ monitoring__section--process {
   font-size: var(--font-size-sm);
   opacity: 0.7;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Тонкая граница сверху */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
 
@@ -1993,4 +1992,5 @@ monitoring__section--process {
     height: 40px;
     font-size: 18px;
   }
+
 }
